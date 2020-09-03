@@ -17,9 +17,27 @@ html, body {
     margin-left: 30px;
 }
 
+.header-icons {
+    display: none;
+    float: right;
+    padding: 10px;
+}
+
+.header-icons i {
+    margin-left: 4px;
+}
+
+.netherlands-img {
+    width: 20px;
+}
+
 .content {
     background-color: #eaf7fd;
     height: calc(100% - 120px);
+}
+
+.title-container {
+    float: right;
 }
 
 .title-description {
@@ -126,4 +144,78 @@ html, body {
 .footer {
     background-color: #134c60;
     color: white;
+}
+
+
+
+/* Media */
+
+@media screen and (max-width: 1200px) {
+    #cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cnt {
+        height: auto;
+    }
+
+    .card-btn {
+        padding-bottom: 30px;
+    }
+
+    .logo-img {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cnt {
+        height: auto;
+    }
+
+    #cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5rem;
+        margin: 30px 20px;
+    }
+
+    .card-btn {
+        padding-bottom: 30px;
+    }
+
+    .slider-title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .slider-content {
+        text-align: center;
+    }
+
+    .title-container {
+        float: none;
+    }
+
+    .stars {
+        float: right;
+    }
+
+    .title-description {
+        margin-left: 30px;
+    }
+
+    .logo-img {
+        margin: 0;
+        max-width: 259px;
+    }
+
+    .header-icons {
+        display: none;
+    }
+
+    @media screen and (max-width: 576px) {
+        .header-icons {
+            display: inline;
+        }
+    }
+
 }
